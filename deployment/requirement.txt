@@ -1,0 +1,7 @@
+pandas==2.2.3
+tensorflow==2.15.0
+numpy==1.26.4
+nltk==3.9.1
+wordcloud
+seaborn==0.13.2
+plotly==5.22.0
