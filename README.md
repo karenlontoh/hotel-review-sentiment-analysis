@@ -35,6 +35,29 @@ Develop a high-accuracy model for sentiment classification to help hotel manager
 ## URL for Model Deployment 🚀
 Explore the deployed model on Hugging Face: [Hotel Review Sentiment Analysis](https://huggingface.co/spaces/karenlontoh/hotel-review-sentiment-analysis)
 
+## Model Analysis 🧮
+### Strengths 💪
+1. **High Accuracy**: The model's performance improved significantly, with accuracy increasing from 46.67% in the initial epoch to 92.69% by the final epoch, indicating effective learning.
+2. **Consistent Loss Reduction**: Both training and validation loss decreased steadily over epochs, showing minimal overfitting and stable training.
+3. **Stable Performance**: Good performance was maintained across both training and validation datasets, supporting model reliability.
+
+### Weaknesses ⚠️
+1. **Low Performance for Neutral Class**: The model struggles with the neutral class, reflected in a lower F1-score of 0.52, which highlights difficulties in differentiating neutral sentiments.
+2. **Validation Accuracy Stagnation**: There was minimal improvement in validation accuracy after reaching a certain threshold, suggesting potential overfitting.
+3. **Imbalanced Class Performance**: The model demonstrated better accuracy for negative and positive classes compared to the neutral class, which could point to data bias and uneven class representation.
+
+### Improvements 🔧
+To enhance the model's performance, consider the following adjustments:
+1. **Increase Model Complexity**: Incorporate additional units in LSTM layers or add Conv1D layers to improve feature extraction.
+2. **Tune Hyperparameters**: Experiment with various learning rates, batch sizes, and activation functions for optimized training.
+3. **Adjust Regularization**: Implement different dropout rates and increase L2 regularization to prevent overfitting.
+4. **Data Augmentation**: Enrich the dataset with more diverse samples to improve class balance.
+5. **Cross-Validation**: Implement k-fold cross-validation to test the model's consistency across multiple data splits.
+6. **Use Ensemble Methods**: Combine predictions from different models to create a robust final prediction.
+
+## Conclusion 📈
+The sentiment analysis model achieved high accuracy (92.69%) and consistent performance, proving effective for classifying hotel reviews. However, improvements are needed to address **overfitting** and enhance the classification of neutral sentiments. This model provides valuable insights for **hotel managers** to make informed decisions and refine **guest experience strategies**.
+
 ## Libraries Used 🛠️
 - Pandas
 - NumPy
